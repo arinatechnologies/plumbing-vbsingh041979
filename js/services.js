@@ -1,0 +1,22 @@
+[
+  "modern kitchen plumbing installation with chrome fixtures",
+  "office building plumbing system with exposed pipes",
+  "emergency burst pipe repair in basement",
+  "luxury bathroom renovation with rainfall shower",
+  "commercial restaurant kitchen plumbing installation",
+  "whole house repiping with PEX tubing",
+  "water damage restoration after plumbing leak",
+  "hotel bathroom plumbing installation",
+  "laundry room plumbing with utility sink",
+  "trenchless sewer line repair equipment",
+  "outdoor garden irrigation system installation",
+  "industrial factory plumbing with large pipes",
+  "residential bathroom vanity plumbing",
+  "commercial building water heater installation",
+  "plumber working under kitchen sink",
+  "copper pipe soldering close-up",
+  "high-rise building plumbing riser",
+  "smart home water monitoring system",
+  "backflow prevention device installation",
+  "sump pump installation in basement"
+]
