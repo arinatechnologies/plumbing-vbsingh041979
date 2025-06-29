@@ -1,0 +1,210 @@
+/* Services Page Styles */
+.services-page {
+  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #1d1d1f;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.services-hero {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f5f5f7;
+}
+
+.services-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services-hero .subheading {
+  font-size: 1.5rem;
+  color: #86868b;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Services Grid */
+.services-grid {
+  padding: 80px 0;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  color: #86868b;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #0066cc;
+}
+
+.btn-learn-more {
+  display: inline-block;
+  color: #0066cc;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding-right: 20px;
+}
+
+.btn-learn-more::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  transition: right 0.2s ease;
+}
+
+.btn-learn-more:hover::after {
+  right: -5px;
+}
+
+/* Projects Gallery */
+.projects-gallery {
+  padding: 60px 0 100px;
+  background-color: #f5f5f7;
+}
+
+.projects-gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  background: none;
+  border: 1px solid #d2d2d7;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #0071e3;
+  color: white;
+  border-color: #0071e3;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 10px;
+  gap: 15px;
+}
+
+.grid-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.overlay p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .services-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services-hero .subheading {
+    font-size: 1.2rem;
+  }
+  
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .masonry-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-buttons {
+    justify-content: flex-start;
+  }
+}
