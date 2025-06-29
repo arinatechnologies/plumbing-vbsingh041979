@@ -1,0 +1,163 @@
+/* Contact Page Styles */
+.contact-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-hero {
+  background-color: #f5f5f7;
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.contact-hero .subhead {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-form-col, .contact-info-col {
+  flex: 1;
+}
+
+.contact-form-col h2, .contact-info-col h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.plumbing-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.plumbing-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.plumbing-form input,
+.plumbing-form select,
+.plumbing-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.plumbing-form input:focus,
+.plumbing-form select:focus,
+.plumbing-form textarea:focus {
+  border-color: #0071e3;
+  outline: none;
+}
+
+.plumbing-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.btn-primary {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0062c4;
+}
+
+.info-card {
+  background: #f5f5f7;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  color: #0071e3;
+}
+
+.info-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.info-card p {
+  margin: 0;
+  color: #666;
+}
+
+.info-card a {
+  color: #0071e3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.info-card a:hover {
+  color: #0062c4;
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+  
+  .contact-form-col, .contact-info-col {
+    width: 100%;
+  }
+  
+  .contact-hero {
+    padding: 60px 0 40px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-content {
+    padding: 40px 0;
+  }
+}
